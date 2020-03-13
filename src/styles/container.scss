@@ -1,0 +1,19 @@
+@mixin container($padding-top-bottom: 0) {    
+    padding: $padding-top-bottom 10px;
+    
+    @media (min-width: 575.98px){
+        padding: $padding-top-bottom calc(50vw - 270px);        
+    }
+    
+    @media (min-width: 767.98px){
+        padding: $padding-top-bottom 10px;        
+    }
+    
+    @media (min-width: 991.98px) {
+        padding: $padding-top-bottom 95px;        
+    }
+}
+
+.container{
+    @include container();   
+}

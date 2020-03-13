@@ -1,0 +1,54 @@
+@media (max-width: 576px) {
+    .header__img {
+        height: 300px;
+        width: 100vw;
+        object-fit: cover;
+        object-position: center;
+    } 
+
+    .header {
+        .header__space {
+            height: 160px;
+        }
+
+        .header__title {
+            font-size: 50px;
+            line-height: 50px;
+            margin-bottom: 5px;
+        }
+
+        .header__subtitle {
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 20px;
+        }
+
+        .header__awards {
+            order: 5;
+            padding: 13px 0 35px;
+
+            .awards__award {
+                width: 46.98px;
+                height: 46.98px;
+            }
+
+            .awards__label {
+                font-size: 14px;
+                line-height: 17px;
+                color: $black;
+                margin-left: 13px;
+
+                &.awards__label_primary {
+                    color: white;
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+            }
+
+            .awards__country {
+                width: 14.77px;
+                height: 14.77px;
+            }
+        }
+    }
+}

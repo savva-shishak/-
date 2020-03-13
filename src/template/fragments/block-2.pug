@@ -1,0 +1,39 @@
+section.section
+    .section__title Второй блок
+    .carousel
+        .carousel__border.carousel__border_left
+            .border__top
+            .border__middle
+            .border__bottom
+
+        .carousel__body
+            .carousel__slides
+                .carousel__slide
+                    include slide
+                .carousel__slide
+                    include slide
+                .carousel__slide
+                    include slide
+                .carousel__slide
+                    include slide
+                .carousel__slide
+                    include slide
+
+        .carousel__border.carousel__border_right
+            .border__top
+            .border__middle
+            .border__bottom
+        
+        .carousel__controlls
+            .controlls__arrow.controlls__arrow_left
+                img(src="/assets/images/arrow-left.png", alt="", srcset="")
+                img(src="/assets/images/arrow-left-active.png", alt="", srcset="").active
+
+            .controlls__label
+                .carousel__position 1 
+                | из 
+                .carousel__number-slides 5
+
+            .controlls__arrow.controlls__arrow_right
+                img(src="/assets/images/arrow-right.png", alt="", srcset="")
+                img(src="/assets/images/arrow-right-active.png", alt="", srcset="").active

@@ -1,0 +1,6 @@
+@media (max-width: 576px) {
+    .panels-group {
+        grid-template-columns: 1fr !important;
+        margin-top: 10px !important;
+    }
+}

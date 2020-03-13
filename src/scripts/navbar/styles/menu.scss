@@ -1,0 +1,27 @@
+@import "../../../styles/root";
+
+.navbar__menu {
+    font-family: 'Museo Sans Cyrl 700';
+    font-size: 50px;
+    line-height: 60px;
+
+    text-align: center;
+    overflow: hidden;
+
+    color: $black;
+
+    z-index: -10;
+
+    .navbar__item {
+        margin: 20px 0;
+    }
+
+    .navbar__links {
+        display: none !important;
+        justify-content: center !important;
+
+        .navbar__link {
+            color: $black !important;
+        }
+    }
+} 

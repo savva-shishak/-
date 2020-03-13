@@ -1,0 +1,43 @@
+@import "./root";
+
+.header__awards {
+    padding: 40px 0 50px;
+
+    .awards__item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 15px 0;
+
+        .awards__award {
+            width: 70px;
+            height: 70px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .award__img {
+                height: auto;
+                width: auto;
+            }
+        }
+
+        .awards__label {
+            font-family: 'Museo Sans Cyrl 700';
+            font-size: 24px;
+            line-height: 29px;
+            margin-left: 50px;
+
+            color: #FFFFFF;
+
+            &.awards__label_primary {
+                font-size: 36px;
+                line-height: 43px;
+                padding: 3px 8px;
+                background-color: $primary;
+                border-radius: 4px;
+            }
+        }
+    }
+}

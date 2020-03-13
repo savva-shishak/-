@@ -1,4 +1,14 @@
-@import 'vendor/index';
-@import 'mixins/index';
-@import 'common/index';
-@import 'modules/index';
+@import "./root";
+@import "./flex-row";
+@import "./container";
+@import "./header";
+@import "./section";
+@import "./mobile/index";
+@import "./panel";
+@import "./categories";
+@import "footer";
+
+body {
+    margin: 0;
+    font-family: 'Museo Sans Cyrl 300';
+}

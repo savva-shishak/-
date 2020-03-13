@@ -1,0 +1,36 @@
+.categories {
+    margin: 25px 0;
+    display: none;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+    .categories__item {
+        width: calc(25% - 10px);
+        margin: 5px;
+        padding: 12px 0;
+
+        text-align: center;
+        color: $grey;
+
+        font-family: 'Museo Sans Cyrl 700';
+        font-size: 13px;
+        line-height: 16px;
+
+        text-align: center;
+        letter-spacing: 0.155em;
+        text-transform: uppercase;
+
+        background: #FFFFFF;
+
+        border: 1px solid #888888;
+        box-sizing: border-box;
+        border-radius: 4px;
+
+        &.categories__item_primary {
+            background-color: $primary;
+            color: white;
+            border: none;
+        }
+    }
+}

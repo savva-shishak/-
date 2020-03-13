@@ -1,0 +1,100 @@
+@import "../../../styles/flex-row";
+@import "../../../styles/container";
+@import "../../../styles/root";
+@import "./toggle";
+@import "./menu";
+
+.navbar {
+    float: right;
+    -webkit-backface-visibility: hidden;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+
+    color: white;
+    * {
+        transition: .3s;
+    }
+
+    .navbar__header {
+        @include container(25px);
+
+        @include flex-row;
+
+        .navbar__logo {
+            font-size: 58px;
+        }
+    }
+
+    .navbar__links {
+        @include flex-row;
+
+        .navbar__link {
+            color: white;
+            text-decoration: none;
+            @include flex-row;
+
+            .link__text {
+                font-family: 'Museo Sans Cyrl 700';
+                font-size: 24px;
+                line-height: 29px;
+                margin-right: 20px;
+            }
+
+            .link__img {
+                margin: 0 20px;
+                width: 34px;
+                height: 34px;
+            }
+        }
+    }
+
+    &.navbar_white {
+        .navbar__header {
+            background-color: white;
+    
+            color: $black;
+    
+            .navbar__link {
+                color: $black !important;
+            }
+
+            .toggle__span {
+                border-color: $black;
+            }
+        }
+    }
+
+    .navbar__menu {
+        overflow: hidden !important;
+        background-color: rgba(#fff, 0.9);
+        height: 0;
+        opacity: 0;
+        padding-top: 0;
+    }
+}
+
+.navbar.navbar_open {
+    .navbar__header {
+        background-color: white;
+
+        color: $black;
+
+        .navbar__link {
+            color: $black !important;
+        }
+
+        .toggle__span {
+            border-color: $black;
+        }
+    }
+
+    .navbar__menu {
+        height: 100vh;
+        opacity: 1;
+        padding-top: 195px;
+    }
+}
+
+@import "./mobile";

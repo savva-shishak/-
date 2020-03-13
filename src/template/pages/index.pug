@@ -2,12 +2,18 @@ doctype html
 html(lang="en")
     head
         meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0, user-scalable=no")
         block title
             title webpack Project
 
     body
-        include ../common/mixins
+        include ../fragments/navbar
+        include ../fragments/header
+            
+        main 
+            include ../fragments/block-2
+            include ../fragments/block-3
 
-        +b.block
-            +e.H2.element 
-                |Hello World!
+        footer.footer
+            span.footer__label © копирайт. 2019
+            img(src="/assets/images/logo-copyrate.png", alt="", srcset="").footer__logo
